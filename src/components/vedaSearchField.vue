@@ -8,7 +8,6 @@
 
 <script>
 import store from "@/store.js";
-import { setTimeout } from "timers";
 
 export default {
   data: function() {

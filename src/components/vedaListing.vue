@@ -13,6 +13,9 @@ import vedaItem from "@/components/vedaItem.vue";
 import { mapState } from "vuex";
 import store from "@/store.js";
 export default {
+  data: () => ({
+    page: 0
+  }),
   mounted() {
     store.dispatch("getData");
   },
@@ -22,6 +25,7 @@ export default {
   },
   computed: mapState({
     list: state => state.list,
+    refMaxPages: state => state.refMaxPages,
     maxPages: state => state.maxPages
   })
 };

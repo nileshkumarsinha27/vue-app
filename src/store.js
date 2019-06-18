@@ -38,7 +38,6 @@ export default new Vuex.Store({
       commit("getDataMutation");
     },
     searchHandle({ commit }, value) {
-      console.log(value);
       commit("getSearchData", value);
     }
   }
